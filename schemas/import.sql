@@ -82,7 +82,7 @@ CREATE TABLE `permissions` (
   `action` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `profilesId` (`profilesId`)
-) ENGINE=InnoDB AUTO_INCREMENT=800 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=808 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -91,7 +91,7 @@ CREATE TABLE `permissions` (
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (751,1,'users','index'),(752,1,'users','search'),(753,1,'users','edit'),(754,1,'users','create'),(755,1,'users','delete'),(756,1,'users','changePassword'),(757,1,'profiles','index'),(758,1,'profiles','search'),(759,1,'profiles','edit'),(760,1,'profiles','create'),(761,1,'profiles','delete'),(762,1,'permissions','index'),(763,1,'record','index'),(764,1,'record','create'),(765,1,'record','delete'),(766,1,'record','update'),(767,1,'record','disable'),(768,1,'domains','index'),(769,1,'domains','edit'),(770,1,'domains','updateDescription'),(771,1,'domains','create'),(772,1,'domains','delete'),(773,1,'nameserver','index'),(774,1,'nameserver','create'),(775,1,'nameserver','delete'),(776,1,'nameserver','update'),(777,1,'nameserver','edit'),(778,1,'topdomains','index'),(779,1,'topdomains','create'),(780,1,'topdomains','delete'),(781,1,'topdomains','update'),(782,1,'topdomains','edit'),(783,1,'changelog','index'),(784,1,'changelog','show'),(785,2,'users','changePassword'),(786,2,'record','index'),(787,2,'record','create'),(788,2,'record','delete'),(789,2,'record','update'),(790,2,'record','disable'),(791,2,'domains','index'),(792,2,'domains','edit'),(793,2,'domains','updateDescription'),(794,2,'domains','create'),(795,2,'domains','delete'),(796,3,'users','changePassword'),(797,3,'record','index'),(798,3,'domains','index'),(799,3,'domains','edit');
+INSERT INTO `permissions` VALUES (751,1,'users','index'),(752,1,'users','search'),(753,1,'users','edit'),(754,1,'users','create'),(755,1,'users','delete'),(756,1,'users','changePassword'),(757,1,'profiles','index'),(758,1,'profiles','search'),(759,1,'profiles','edit'),(760,1,'profiles','create'),(761,1,'profiles','delete'),(762,1,'permissions','index'),(800,1,'spotify','index'),(801,1,'spotify','create'),(802,1,'spotify','view'),(803,2,'spotify','index'),(804,2,'spotify','view'),(805,2,'spotify','create'),(806,3,'spotify','index'),(807,3,'spotify','view');
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -157,6 +157,7 @@ CREATE TABLE `reset_passwords` (
   KEY `usersId` (`usersId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
 --
 -- Table structure for table `success_logins`
 --
@@ -171,7 +172,7 @@ CREATE TABLE `success_logins` (
   `userAgent` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `usersId` (`usersId`)
-) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=74 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -215,4 +216,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-03 23:06:07
+-- Dump completed on 2019-02-03 23:59:48
