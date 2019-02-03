@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Mail;
+namespace ripper\Mail;
 
 class Exception extends \Exception
 {

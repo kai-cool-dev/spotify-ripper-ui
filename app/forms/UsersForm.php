@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Forms;
+namespace ripper\Forms;
 
 use Phalcon\Forms\Form;
 use Phalcon\Forms\Element\Text;
@@ -7,7 +7,7 @@ use Phalcon\Forms\Element\Hidden;
 use Phalcon\Forms\Element\Select;
 use Phalcon\Validation\Validator\PresenceOf;
 use Phalcon\Validation\Validator\Email;
-use kDNS\Models\Profiles;
+use ripper\Models\Profiles;
 
 class UsersForm extends Form
 {

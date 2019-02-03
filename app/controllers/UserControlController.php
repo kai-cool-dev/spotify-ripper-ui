@@ -1,8 +1,8 @@
 <?php
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
-use kDNS\Models\EmailConfirmations;
-use kDNS\Models\ResetPasswords;
+use ripper\Models\EmailConfirmations;
+use ripper\Models\ResetPasswords;
 
 /**
  * UserControlController

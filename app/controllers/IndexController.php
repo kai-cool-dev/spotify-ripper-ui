@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
 /**
  * Display the default index page.

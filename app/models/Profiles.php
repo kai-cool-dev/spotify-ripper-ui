@@ -1,11 +1,11 @@
 <?php
-namespace kDNS\Models;
+namespace ripper\Models;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Mvc\Model\Relation;
 
 /**
- * kDNS\Models\Profiles
+ * ripper\Models\Profiles
  * All the profile levels in the application. Used in conjenction with ACL lists
  */
 class Profiles extends Model

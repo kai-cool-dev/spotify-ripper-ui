@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>kDNS Managment GUI</title>
+	<title>Spotify-Ripper</title>
 	{{ stylesheet_link('css/bootstrap.min.css') }}
 	{{ stylesheet_link('css/all.css') }}
 	{{ stylesheet_link('css/style.css') }}
@@ -12,6 +12,5 @@
 	{{ javascript_include("js/popper.js") }}
 	{{ javascript_include("js/bootstrap.min.js") }}
 	{{ javascript_include("js/app.js") }}
-	{{ javascript_include("js/sha256.js") }}
 </body>
 </html>

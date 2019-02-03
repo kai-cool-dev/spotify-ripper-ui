@@ -1,12 +1,12 @@
 <?php
-namespace kDNS\Models;
+namespace ripper\Models;
 
 use Phalcon\Mvc\Model;
 use Phalcon\Validation;
 use Phalcon\Validation\Validator\Uniqueness;
 
 /**
- * kDNS\Models\Users
+ * ripper\Models\Users
  * All the users registered in the application
  */
 class Users extends Model

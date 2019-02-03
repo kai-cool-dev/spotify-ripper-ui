@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Auth;
+namespace ripper\Auth;
 
 class Exception extends \Exception
 {

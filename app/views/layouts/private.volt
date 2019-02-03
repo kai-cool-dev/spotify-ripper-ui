@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-  {{ link_to(null, 'class': 'navbar-brand', '<i class="fas fa-globe"></i> kDNS')}}
+  {{ link_to(null, 'class': 'navbar-brand', '<i class="fas fa-music"></i> Spotify Ripper')}}
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -76,5 +76,5 @@
 <footer>
   Made with <i class="far fa-heart"></i> in <span id="germany">Germany</span><br>
   <i class="far fa-copyright"></i> 2018 to {{ date("Y") }} Kai Pazdzewicz.<br>
-  kDNS Version 2
+  ripper Version 2
 </footer>

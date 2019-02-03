@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Mail;
+namespace ripper\Mail;
 
 use Phalcon\Mvc\User\Component;
 use Swift_Message as Message;
@@ -7,7 +7,7 @@ use Swift_SmtpTransport as Smtp;
 use Phalcon\Mvc\View;
 
 /**
- * kDNS\Mail\Mail
+ * ripper\Mail\Mail
  * Sends e-mails based on pre-defined templates
  */
 class Mail extends Component

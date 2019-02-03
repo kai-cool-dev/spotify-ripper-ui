@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Models;
+namespace ripper\Models;
 
 use Phalcon\Mvc\Model;
 

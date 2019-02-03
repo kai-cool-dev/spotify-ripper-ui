@@ -52,7 +52,7 @@ Install the Web GUI
 
 To run this application on your machine, you need at least:
 
--	>= PHP 7.2 - >= Phalcon 3.0 - Apache Web Server with `mod_rewrite enabled`, and `AllowOverride Options` (or `All`) in your `httpd.conf` or Nginx Web Server - Latest [Phalcon Framework](https://github.com/phalcon/cphalcon) extension installed/enabled - MySQL >= 5.7 or MariaDB >= 10.0
+> > = PHP 7.2 - >= Phalcon 3.0 - Apache Web Server with `mod_rewrite enabled`, and `AllowOverride Options` (or `All`) in your `httpd.conf` or Nginx Web Server - Latest [Phalcon Framework](https://github.com/phalcon/cphalcon) extension installed/enabled - MySQL >= 5.7 or MariaDB >= 10.0
 
 ### Installing DNS Database Schema
 

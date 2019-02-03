@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Forms;
+namespace ripper\Forms;
 
 use Phalcon\Forms\Form;
 use Phalcon\Forms\Element\Text;

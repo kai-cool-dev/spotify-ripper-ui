@@ -1,14 +1,14 @@
 <?php
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
 use Phalcon\Tag;
 use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use kDNS\Forms\ProfilesForm;
-use kDNS\Models\Profiles;
+use ripper\Forms\ProfilesForm;
+use ripper\Models\Profiles;
 
 /**
- * kDNS\Controllers\ProfilesController
+ * ripper\Controllers\ProfilesController
  * CRUD to manage profiles
  */
 class ProfilesController extends ControllerBase
@@ -38,7 +38,7 @@ class ProfilesController extends ControllerBase
     {
         $numberPage = 1;
         if ($this->request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'kDNS\Models\Profiles', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'ripper\Models\Profiles', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
         } else {
             $numberPage = $this->request->getQuery("page", "int");

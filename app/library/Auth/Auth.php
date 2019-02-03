@@ -1,15 +1,15 @@
 <?php
-namespace kDNS\Auth;
+namespace ripper\Auth;
 
 use Phalcon\Mvc\User\Component;
-use kDNS\Models\Users;
-use kDNS\Models\RememberTokens;
-use kDNS\Models\SuccessLogins;
-use kDNS\Models\FailedLogins;
+use ripper\Models\Users;
+use ripper\Models\RememberTokens;
+use ripper\Models\SuccessLogins;
+use ripper\Models\FailedLogins;
 
 /**
- * kDNS\Auth\Auth
- * Manages Authentication/Identity Management in kDNS
+ * ripper\Auth\Auth
+ * Manages Authentication/Identity Management in ripper
  */
 class Auth extends Component
 {
@@ -58,7 +58,7 @@ class Auth extends Component
     /**
      * Creates the remember me environment settings the related cookies and generating tokens
      *
-     * @param \kDNS\Models\Users $user
+     * @param \ripper\Models\Users $user
      * @throws Exception
      */
     public function saveSuccessLogin($user)
@@ -113,7 +113,7 @@ class Auth extends Component
     /**
      * Creates the remember me environment settings the related cookies and generating tokens
      *
-     * @param \kDNS\Models\Users $user
+     * @param \ripper\Models\Users $user
      */
     public function createRememberEnvironment(Users $user)
     {
@@ -201,7 +201,7 @@ class Auth extends Component
     /**
      * Checks if the user is banned/inactive/suspended
      *
-     * @param \kDNS\Models\Users $user
+     * @param \ripper\Models\Users $user
      * @throws Exception
      */
     public function checkUserFlags(Users $user)
@@ -288,7 +288,7 @@ class Auth extends Component
     /**
      * Get the entity related to user in the active identity
      *
-     * @return \kDNS\Models\Users
+     * @return \ripper\Models\Users
      * @throws Exception
      */
     public function getUser()

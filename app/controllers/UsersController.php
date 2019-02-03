@@ -1,16 +1,16 @@
 <?php
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
 use Phalcon\Tag;
 use Phalcon\Mvc\Model\Criteria;
 use Phalcon\Paginator\Adapter\Model as Paginator;
-use kDNS\Forms\ChangePasswordForm;
-use kDNS\Forms\UsersForm;
-use kDNS\Models\Users;
-use kDNS\Models\PasswordChanges;
+use ripper\Forms\ChangePasswordForm;
+use ripper\Forms\UsersForm;
+use ripper\Models\Users;
+use ripper\Models\PasswordChanges;
 
 /**
- * kDNS\Controllers\UsersController
+ * ripper\Controllers\UsersController
  * CRUD to manage users
  */
 class UsersController extends ControllerBase
@@ -37,7 +37,7 @@ class UsersController extends ControllerBase
     {
         $numberPage = 1;
         if ($this->request->isPost()) {
-            $query = Criteria::fromInput($this->di, 'kDNS\Models\Users', $this->request->getPost());
+            $query = Criteria::fromInput($this->di, 'ripper\Models\Users', $this->request->getPost());
             $this->persistent->searchParams = $query->getParams();
         } else {
             $numberPage = $this->request->getQuery("page", "int");

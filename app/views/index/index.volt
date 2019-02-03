@@ -1,13 +1,13 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="jumbotron">
-			<h1 class="display-4">Welcome to <i class="fas fa-globe"></i> kDNS!</h1>
-			<p class="lead">This is the control panel for your domain management. Please login to your account to manage your domains.</p>
+			<h1 class="display-4">Welcome to <i class="fas fa-music"></i> Spotify-Ripper!</h1>
+			<p class="lead">Please login to start ripping your spotify music.</p>
 			<hr class="my-4">
 			<div class="row">
 				{%- if logged_in is defined and not(logged_in is empty) -%}
 				<div class="col-lg-12">
-					{{ link_to('domain/', '<i class="fas fa-server"></i> Management', 'class': 'btn btn-primary btn-large form-control') }}
+					{{ link_to('spotify/', '<i class="fas fa-server"></i> Spotify-Ripper', 'class': 'btn btn-primary btn-large form-control') }}
 				</div>
 		    {% else %}
 				<div class="col-lg-12">

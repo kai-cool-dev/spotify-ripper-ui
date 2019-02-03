@@ -1,5 +1,5 @@
 <?php
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
 use Phalcon\Mvc\Controller;
 use Phalcon\Mvc\Dispatcher;
@@ -8,7 +8,7 @@ use Phalcon\Mvc\Dispatcher;
  * ControllerBase
  * This is the base controller for all controllers in the application
  *
- * @property \kDNS\Auth\Auth auth
+ * @property \ripper\Auth\Auth auth
  */
 class ControllerBase extends Controller
 {

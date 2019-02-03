@@ -1,13 +1,13 @@
 <?php
 
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
-use kDNS\Forms\LoginForm;
-use kDNS\Forms\SignUpForm;
-use kDNS\Forms\ForgotPasswordForm;
-use kDNS\Auth\Exception as AuthException;
-use kDNS\Models\Users;
-use kDNS\Models\ResetPasswords;
+use ripper\Forms\LoginForm;
+use ripper\Forms\SignUpForm;
+use ripper\Forms\ForgotPasswordForm;
+use ripper\Auth\Exception as AuthException;
+use ripper\Models\Users;
+use ripper\Models\ResetPasswords;
 
 /**
  * Controller used handle non-authenticated session actions like login/logout, user signup, and forgotten passwords

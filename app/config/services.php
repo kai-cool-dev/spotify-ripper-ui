@@ -12,9 +12,9 @@ use Phalcon\Flash\Direct as Flash;
 use Phalcon\Logger\Adapter\File as FileLogger;
 use Phalcon\Logger\Formatter\Line as FormatterLine;
 use Phalcon\Cache\Frontend\Data as FrontData;
-use kDNS\Auth\Auth;
-use kDNS\Acl\Acl;
-use kDNS\Mail\Mail;
+use ripper\Auth\Auth;
+use ripper\Acl\Acl;
+use ripper\Mail\Mail;
 
 /**
  * Register the global configuration as config
@@ -150,7 +150,7 @@ $di->set('crypt', function () {
  */
 $di->set('dispatcher', function () {
     $dispatcher = new Dispatcher();
-    $dispatcher->setDefaultNamespace('kDNS\Controllers');
+    $dispatcher->setDefaultNamespace('ripper\Controllers');
     return $dispatcher;
 });
 

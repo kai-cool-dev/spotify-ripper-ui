@@ -1,8 +1,8 @@
 <?php
-namespace kDNS\Controllers;
+namespace ripper\Controllers;
 
-use kDNS\Models\Profiles;
-use kDNS\Models\Permissions;
+use ripper\Models\Profiles;
+use ripper\Models\Permissions;
 
 /**
  * View and define permissions for the various profile levels.

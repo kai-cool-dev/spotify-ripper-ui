@@ -1,14 +1,14 @@
 <?php
-namespace kDNS\Acl;
+namespace ripper\Acl;
 
 use Phalcon\Mvc\User\Component;
 use Phalcon\Acl\Adapter\Memory as AclMemory;
 use Phalcon\Acl\Role as AclRole;
 use Phalcon\Acl\Resource as AclResource;
-use kDNS\Models\Profiles;
+use ripper\Models\Profiles;
 
 /**
- * kDNS\Acl\Acl
+ * ripper\Acl\Acl
  */
 class Acl extends Component
 {
@@ -91,7 +91,7 @@ class Acl extends Component
 
         // Check if the ACL is in APC
         if (function_exists('apc_fetch')) {
-            $acl = apc_fetch('kDNS-acl');
+            $acl = apc_fetch('ripper-acl');
             if (is_object($acl)) {
                 $this->acl = $acl;
                 return $acl;
@@ -112,7 +112,7 @@ class Acl extends Component
 
         // Store the ACL in APC
         if (function_exists('apc_store')) {
-            apc_store('kDNS-acl', $this->acl);
+            apc_store('ripper-acl', $this->acl);
         }
 
         return $this->acl;
@@ -205,7 +205,7 @@ class Acl extends Component
 
             // Store the ACL in APC
             if (function_exists('apc_store')) {
-                apc_store('kDNS-acl', $acl);
+                apc_store('ripper-acl', $acl);
             }
         } else {
             $this->flash->error(
