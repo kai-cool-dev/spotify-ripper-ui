@@ -1,0 +1,30 @@
+{
+  "name": "spotify-ripper/html",
+  "description": "GUI to rip and download spotify tracks.",
+  "version": "2.0.0",
+  "keywords": [
+    "phalcon",
+    "framework",
+    "spotify",
+    "ripper",
+    "music"
+  ],
+  "type": "gui",
+  "license": "BSD-3",
+  "homepage": "https://ripper.kai.cool",
+  "authors" : [
+    {
+      "name" : "Kai Pazdzewicz",
+      "email" : "ich@kai.cool"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "ext-phalcon": "~3.0",
+    "swiftmailer/swiftmailer": "^5.4",
+    "aws/aws-sdk-php": "~3.0"
+  },
+  "require-dev": {
+    "phalcon/dd": "~1.1.0"
+  }
+}
