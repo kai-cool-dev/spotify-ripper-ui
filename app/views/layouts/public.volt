@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     {%- if logged_in is defined and not(logged_in is empty) -%}
     <ul class="navbar-nav mr-r4">
-      <li class="nav-item">{{ link_to('domain/index', '<i class="fas fa-server"></i> DNS Management', 'class':'nav-link') }}</li>
+      <li class="nav-item">{{ link_to('spotify/index', '<i class="fas fa-server"></i> Spotify', 'class':'nav-link') }}</li>
       <li class="nav-item">{{ link_to('session/logout', '<i class="fas fa-sign-out-alt"></i> Logout', 'class':'nav-link') }}</li>
     </ul>
     {% else %}
@@ -26,5 +26,5 @@
 
 <footer>
   Made with <i class="far fa-heart"></i> in <span id="germany">Germany</span><br>
-  <i class="far fa-copyright"></i> 2018 to {{ date("Y") }} Kai Pazdzewicz.<br>
+  <i class="far fa-copyright"></i> 2018 to {{ date("Y") }} Kai Pazdzewicz.
 </footer>

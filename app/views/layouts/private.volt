@@ -7,9 +7,8 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       {%- set menus = [
-        '<i class="fas fa-home"></i> Home': 'index',
-        '<i class="fas fa-search"></i> List/Search Domains': 'domain/index',
-        '<i class="fas fa-plus"></i> Create new Domain': 'domain/create'
+        '<i class="fas fa-music"></i> List Spotify Downloads': 'spotify/index',
+        '<i class="fas fa-cloud-download-alt"></i> Download Track': 'spotify/create'
       ] -%}
 
       {%- for key, value in menus %}
@@ -29,28 +28,9 @@
       ] -%}
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user"></i> User
+          <i class="fas fa-user"></i> User Management
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          {%- for key, value in menus %}
-            {% if value == dispatcher.getControllerName() %}
-              {{ link_to(value, key, 'class':'dropdown-item active') }}
-            {% else %}
-              {{ link_to(value, key, 'class':'dropdown-item') }}
-            {% endif %}
-          {%- endfor -%}
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-server"></i> DNS
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          {%- set menus = [
-            '<i class="fas fa-wrench"></i> Top Level Domains': 'topdomains/index',
-            '<i class="fas fa-wrench"></i> Nameserver': 'nameserver/index',
-            '<i class="far fa-file-alt"></i> Changelog': 'changelog/index'
-          ] -%}
           {%- for key, value in menus %}
             {% if value == dispatcher.getControllerName() %}
               {{ link_to(value, key, 'class':'dropdown-item active') }}
@@ -75,6 +55,5 @@
 
 <footer>
   Made with <i class="far fa-heart"></i> in <span id="germany">Germany</span><br>
-  <i class="far fa-copyright"></i> 2018 to {{ date("Y") }} Kai Pazdzewicz.<br>
-  ripper Version 2
+  <i class="far fa-copyright"></i> 2018 to {{ date("Y") }} Kai Pazdzewicz.
 </footer>

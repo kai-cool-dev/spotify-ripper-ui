@@ -88,7 +88,7 @@ class SessionController extends ControllerBase
                         'remember' => $this->request->getPost('remember')
                     ]);
 
-                    return $this->response->redirect('domain/index');
+                    return $this->response->redirect('spotify/index');
                 }
             }
         } catch (AuthException $e) {

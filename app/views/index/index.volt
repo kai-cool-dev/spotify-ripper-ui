@@ -7,7 +7,7 @@
 			<div class="row">
 				{%- if logged_in is defined and not(logged_in is empty) -%}
 				<div class="col-lg-12">
-					{{ link_to('spotify/', '<i class="fas fa-server"></i> Spotify-Ripper', 'class': 'btn btn-primary btn-large form-control') }}
+					{{ link_to('spotify/index', '<i class="fas fa-server"></i> Spotify-Ripper', 'class': 'btn btn-primary btn-large form-control') }}
 				</div>
 		    {% else %}
 				<div class="col-lg-12">

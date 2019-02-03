@@ -21,36 +21,9 @@ return new Config([
     'permissions' => [
       'index'
     ],
-    'record' => [
+    'spotify' => [
       'index',
       'create',
-      'delete',
-      'update',
-      'disable'
-    ],
-    'domains' => [
-      'index',
-      'edit',
-      'updateDescription',
-      'create',
-      'delete'
-    ],
-    'nameserver' => [
-      'index',
-      'create',
-      'delete',
-      'update',
-      'edit'
-    ],
-    'topdomains' => [
-      'index',
-      'create',
-      'delete',
-      'update',
-      'edit'
-    ],
-    'changelog' => [
-      'index',
       'show'
     ]
   ]
