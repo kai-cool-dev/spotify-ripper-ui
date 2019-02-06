@@ -1,0 +1,5 @@
+php>=7.2
+ext-phalcon>=3.0
+swiftmailer/swiftmailer>=5.4
+aws/aws-sdk-php>=3.0
+redis>=5.0
