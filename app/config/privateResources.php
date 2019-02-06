@@ -43,6 +43,9 @@ return new Config([
       'create',
       'view',
       'delete'
+    ],
+    'spotiapi' => [
+      'authorize'
     ]
   ]
 ]);

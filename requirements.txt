@@ -2,3 +2,4 @@ phalcon/cphalcon>=3.0
 swiftmailer/swiftmailer>=5.4
 aws/aws-sdk-php>=3.0
 antirez/redis>=5.0
+jwilsson/spotify-web-api-php>=2.6.1
