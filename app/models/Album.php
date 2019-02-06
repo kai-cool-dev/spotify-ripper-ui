@@ -2,12 +2,9 @@
 namespace ripper\Models;
 
 use Phalcon\Mvc\Model;
+use ripper\Models\Artist;
 
-/**
- * Nameserver
- * Stores the records by domain
- */
-class Nameserver extends Model
+class Album extends Model
 {
 
     /**
@@ -20,51 +17,41 @@ class Nameserver extends Model
      *
      * @var string
      */
+    public $artist;
+
+    /**
+     *
+     * @var string
+     */
     public $name;
 
     /**
      *
      * @var string
      */
-    public $fqdn;
+    public $label;
 
     /**
      *
      * @var string
      */
-    public $ip4;
+    public $release;
 
     /**
      *
      * @var string
      */
-    public $ip6;
+    public $image;
 
     /**
      *
      * @var string
      */
-    public $description;
-
-    /**
-     *
-     * @var string
-     */
-    public $topdomains;
-
-    /**
-     *
-     * @var string
-     */
-    public $type;
+    public $spotify_id;
 
 
     public function afterFetch()
     {
-      $this->topdomains=json_decode($this->topdomains,true);
-    }
-
-    public function afterSave()
-    {
+      $this->artist=Artist::findFirst($this->artist);
     }
 }

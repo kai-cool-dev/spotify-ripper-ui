@@ -24,7 +24,25 @@ return new Config([
     'spotify' => [
       'index',
       'create',
-      'show'
+      'view'
+    ],
+    'track' => [
+      'index',
+      'create',
+      'view',
+      'delete'
+    ],
+    'album' => [
+      'index',
+      'create',
+      'view',
+      'delete'
+    ],
+    'artist' => [
+      'index',
+      'create',
+      'view',
+      'delete'
     ]
   ]
 ]);
