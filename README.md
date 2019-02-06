@@ -7,7 +7,17 @@ A user can enter the spotify track id to the queue. It is then ripped by a reall
 
 This software is highly optimized and uses redis for caching the complete metadata. The songs are then saved on the servers harddisk and can be downloaded via webinterface.
 
+Installation
+------------
+
+Please read the installation guide located in `INSTALL.md`
+
 License
 -------
 
 Spotify-Ripper is open-sourced software licensed under the New BSD License. Please read the License located in `LICENSE.md`
+
+Other Software
+--------------
+
+This program is based on various other programs. Please read the list located in `OPENSOURCE.md`
